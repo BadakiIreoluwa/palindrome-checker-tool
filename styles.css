@@ -1,0 +1,81 @@
+:root {
+  --black: #0d1b2a;
+  --orange: #fca311;
+  --white: #fff; 
+  --green: #008000;
+  --red: #d00000;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white); 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 4px 3px 0px #7a7a7a, 2px 2px 2px rgba(206,89,55,0);
+}
+
+.hidden {
+  display: none;
+}
+
+.definition {
+  margin-top: -15px;
+  text-indent: 1rem;
+}
+
+#palindrome-container {
+  display: flex;
+  max-width: 500px;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  border: 2px dashed var(--orange);
+  border-radius: 20px;
+}
+
+label, 
+#input-container {
+  padding-bottom: 8px;
+}
+
+input[type="text"] {
+  background-color: var(--black);
+  color: var(--white);
+  border: 0;
+  border-bottom: 2px solid var(--white);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#check-btn {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--orange);
+  color: var(--black);
+  border: 2px outset var(--orange);
+}
+
+#check-btn:active {
+  border: 2px inset var(--orange);
+}
+
+#result {
+  background-color: var(--red);
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 0 0 20px 20px;
+}
+
+#result.is-palindrome {
+  background-color: var(--green);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
